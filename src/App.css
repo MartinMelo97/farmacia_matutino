@@ -6,11 +6,16 @@
   align-items: center;
 }
 
+.linksito {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 .navbar {
   width: 100vw;
   height: 10vh;
   background-color: black;
-  color: #fff;
+  color: #fff !important;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -41,3 +46,5 @@
   height: auto;
   border-radius: 10px;
 }
+
+
