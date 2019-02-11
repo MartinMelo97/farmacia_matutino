@@ -58,6 +58,13 @@ class Products extends Component {
         this.setState({newProduct: new_product})
     }
 
+    addProduct = (e) => {
+        e.preventDefault();
+        let { products }  = this.state
+        products.push(this.state.newProduct)
+        this.setState({products})
+    }
+
     render() {
         return (
             <div>
@@ -101,7 +108,7 @@ class Products extends Component {
                     placeholder="imagen"
                     onChange={(e)=>this.changeImage(e)}
                 />
-                <button>Agregame mijo</button>
+                <button onClick={(e)=>this.addProduct(e)}>Agregame mijo</button>
             </div>
             </div>
 
